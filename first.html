@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        
+        let roll_NO = Number(prompt("Enter the roll no of students "))
+        let student_Name = prompt("Enter the name of student : ")
+        let html_Score = Number(prompt("Enter the score of HTML : "))
+        let css_Score = Number(prompt("Enter the score of CSS : "))
+        let react_Score = Number(prompt("Enter the score of REACT : "))
+        let node_Score = Number(prompt("Enter the score of NODE : "))
+        let python_Score = Number(prompt("Enter the score of PYTHON : "))
+         let obtained_Marks = html_Score + css_Score + react_Score + node_Score + python_Score;
+         let percentage = obtained_Marks / 500 * 100;
+         
+         var grade = ""
+         if(percentage >= 90){
+            grade= "A+";
+        
+         }else if(percentage >= 80){
+            grade = "A";
+         }else if(percentage >= 70){
+            grade = "B";
+         }else if(percentage >= 60){
+            grade = "C";
+         }else if(percentage >= 50){
+            grade = "D";
+         }else{
+            grade = "Fail"
+         }
+        //  alert("your obtainen_Marks are : " + obtained_Marks + "\nyour grade is : " + grade + "\nyour percentage is : " + percentage);
+         alert(`your roll no is :   ${roll_NO}
+        your name is :              ${student_Name}
+        your obtained marks are :   ${obtained_Marks}
+        your grade is  :            ${grade}
+        your percentage is :        ${percentage}
+         `)
+        
+        
+
+
+
+        
+        
+         
+        
+        
+        
+        
+
+    </script>
+    <h1>marks</h1>
+    
+</body>
+</html>
